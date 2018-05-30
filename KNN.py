@@ -9,7 +9,7 @@ def data_train(dataset,k):
     count=0
     temp = []
     tempkey={} 
-    with open('ecoli_train.csv') as tr:
+    with open('src/ecoli_train.csv') as tr:
         for line in tr:
             datasum = 0
             count = count + 1
@@ -45,7 +45,7 @@ def data_train(dataset,k):
 # get the test data and predict the class
 def data_test():
     count=0
-    with open('ecoli_test.csv') as ts:
+    with open('src/ecoli_test.csv') as ts:
         for line in ts:
             data = [] 
             count = count + 1
